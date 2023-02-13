@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+   <title>Lieferando</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/LogoMakr-4jx6e1.png">
+   <script src="script.js"></script>
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="header-left">
+         <img class="delivery-icon" src="img/food-delivery.png">
+         Delivereasy.de
+      </div>
+      <h3><u class="headline">Speisekarte</u></h3>
+
+      <img class="menu-icon" src="img/menu.png">
+   </header>
+
+   <div class="content">
+
+      <div class="menu-content">
+         <div class="header-img">
+            <img src="img/pexels-chan-walrus-958545.jpg">
+         </div>
+
+         <div class="info-box">
+
+            <div class="restaurant-description">
+               <img class="logo" src="img/LogoMakr-4jx6e1.png">
+               <span>SvaaDish Authentic Indian Food</span>
+               <img class="rating" src="img/star.png">
+            </div>
+
+            <div class="info-btn">
+               <img src="img/info.png"> <img id="heart" onclick="redHeart()" src="img/love.png">
+            </div>
+         </div>
+         <div class="dishes">
+            <div class="dish-categorys">
+               <div class="menus"><a href="#popular">Popular</a></div>
+               <div class="menus"><a href="#chicken">Chicken Dishes</a></div>
+               <div class="menus"><a href="#lamb">Lamb Dishes</a></div>
+               <div class="menus"><a href="#fish">Fish Dishes</a></div>
+               <div class="menus"><a href="#sides">Sides</a></div>
+               <div class="menus"><a href="#desserts">Desserts</a></div>
+               <div class="menus-width"><a href="#drinks">Non-alcoholic Drinks</a></div>
+            </div>
+         </div>
+         <div id="popular" class="card-headline">
+            Popular
+         </div>
+
+         <div id="card">
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chicken Biryani
+                  </div>
+                  <div class="ingredients">
+                     with Basmati Rice and grilled tandoori Chicken<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     12.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chicken Biryani','12.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Butter Chicken
+                  </div>
+                  <div class="ingredients">
+                     with tandoori Chicken in a buttery Cashew-tomato Cream Sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     13.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Butter Chicken','13.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chicken Madras (Hot)
+                  </div>
+                  <div class="ingredients">
+                     with tandoori Chicken and various vegetables in a hot and spicy creamy Coconut-Currysauce <br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     13.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chicken Madras','13.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-img"><img src="img/Chicken-dishes.jpg"></div>
+
+            <div id="chicken" class="card-headline">
+               Indian Cuisine - Chicken Dishes
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chicken Jalfrezi
+                  </div>
+                  <div class="ingredients">
+                     with various vegetables in a red curry tomato sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     11.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chicken Jalfrezi','11.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chicken Saag
+                  </div>
+                  <div class="ingredients">
+                     with spinach, fresh tomatos, chilli peppers in a creamy coconut tomato sauce <br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     14.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chicken Saag', '14.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chicken tikka Masala
+                  </div>
+                  <div class="ingredients">
+                     Tandoor Chicken pieces in a hot red sauce with potatos, ginger, cumin and bell pepper <br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     13.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chicken tikka Masala', '13.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chicken tikka
+                  </div>
+                  <div class="ingredients">
+                     Marinated grilled tandoori Chicken pieces <br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     13.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chicken Tikka', '13.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-img"><img src="img/Lamb curry.jpg"></div>
+
+            <div id="lamb" class="card-headline">
+               Indian Cuisine - Lamb Dishes
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Lamb Biryani
+                  </div>
+                  <div class="ingredients">
+                     with Basmati Rice, grilled spicy Lamb pieces<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     14.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Lamb Biryani', '14.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Lamb Madras
+                  </div>
+                  <div class="ingredients">
+                     lamb with various vegetables in spicy creamy coconut curry sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     13.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Lamb Madras', '13.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Lamb Saag
+                  </div>
+                  <div class="ingredients">
+                     with spinach, fresh tomatos, chilli peppers in a creamy coconut tomato sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati ,Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     13.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Lamb Saag', '13.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Lamb Shahi Korma
+                  </div>
+                  <div class="ingredients">
+                     Lamb Cubes with homemade Cheese(paneer), raisins and almonds in a delicate creamy cashew sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     16.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Lamb Shahi Korma', '16.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-img"><img src="img/fish dishes.jpg"></div>
+
+            <div id="fish" class="card-headline">
+               Indian Cuisine - Fish Dishes
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Fish Curry
+                  </div>
+                  <div class="ingredients">
+                     marinated fish fillet with fresh ginger and garlic in delicate curry sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     12.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Fish Curry', '12.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Jhinga Masala
+                  </div>
+                  <div class="ingredients">
+                     spicy marinated king prawns with fresh bell pepper, tomatoes and lemon juice in tomato garlic
+                     sauce<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     15.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Jhinga Masala', '15.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Fish Pakora
+                  </div>
+                  <div class="ingredients">
+                     marinated fish fillet Pakoras<br>
+                     <span class="optional">Choice of: Basmati rice, Chapati, Naan, Mango chutney, Mango Lassi 0.3l and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     6.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Fish Pakora', '6.90')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-img"><img src="img/Sides.jpg"></div>
+
+            <div id="sides" class="card-headline">
+               Indian Cuisine - Sides
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Papadam (2 pieces)
+                  </div>
+                  <div class="ingredients">
+                     Indian Crackers with a Dip of Choice<br>
+                     <span class="optional">Mango chutney, coconut yoghurt, Mint Chutney,and
+                        more.</span>
+                  </div>
+                  <div class="price">
+                     2.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket(`Papadam (2 pieces)`, '2.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Basmati Rice
+                  </div>
+                  <div class="ingredients">
+                     Cooked Basmati rice
+                  </div>
+                  <div class="price">
+                     3.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Basmati Rice', '3.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Raita
+                  </div>
+                  <div class="ingredients">
+                     with minced cucumber and onions
+                  </div>
+                  <div class="price">
+                     2.90€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Raita', '2.90')" src="img/plus.png">
+               </div>
+
+            </div>
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Tandoori Naan Garlic
+                  </div>
+                  <div class="ingredients">
+                     Homemade Naan with Garlic
+                  </div>
+                  <div class="price">
+                     2.80€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Tandoor Naan Garlic', '2.80')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Tandoori Naan Ginger
+                  </div>
+                  <div class="ingredients">
+                     Homemade Naan with Ginger
+                  </div>
+                  <div class="price">
+                     2.80€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Tandoor Naan Ginger', '2.80')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Tandoori Naan Plain
+                  </div>
+                  <div class="ingredients">
+                     Homemade Naan
+                  </div>
+                  <div class="price">
+                     2.80€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Tandoor Naan Plain', '2.80')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Tandoori Naan Cheese
+                  </div>
+                  <div class="ingredients">
+                     Homemade Naan with Cheese on top
+                  </div>
+                  <div class="price">
+                     3.50€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Tandoor Naan Cheese', '3.50')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Chapati
+                  </div>
+                  <div class="ingredients">
+                     Homemade Chapati
+                  </div>
+                  <div class="price">
+                     2.50€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Chapat', '2.50')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-img"><img src="img/mango-g375dccd35_1920.jpg"></div>
+
+            <div id="desserts" class="card-headline">
+               Desserts
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Gulab Jamun
+                  </div>
+                  <div class="ingredients">
+                     baked solid dairy balls soaked in rose sugar syrup
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Gulab Jamun', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Kulfi
+                  </div>
+                  <div class="ingredients">
+                     Indian Ice Cream with safran, milk, cardamom
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Kulfi', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Choclate Muffin
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Choclate Muffin', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div id="drinks" class="card-img"><img src="img/dinks.jpg"></div>
+
+            <div class="card-headline">
+               Non alcoholic Drinks
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Coca-Cola 1,0l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Coca-Cola 1,0L', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Coca-Cola Zero 1,0l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Coca-Cola zero 1,0L', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Fanta 1,0l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Fanta 1,0L', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Sprite 1,0l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Sprite 1,0L', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Lassi 0,3l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.50€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Lassi 0,3L', '3.50')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Mango Lassi 0,3l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.80€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Mango Lassi 0,3L', '3.80')" src="img/plus.png">
+               </div>
+
+            </div>
+
+            <div class="card-1">
+               <div class="dish-name-card">
+                  <div class="dish-name">
+                     Mezzo-Mix 1,0l
+                  </div>
+                  <div class="ingredients">
+
+                  </div>
+                  <div class="price">
+                     3.20€
+                  </div>
+               </div>
+
+               <div class="plus-icon">
+                  <img onclick="addToBasket('Mezzo-Mix 1,0L', '3.20')" src="img/plus.png">
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="shopping-basket" id="warenkorb">
+         <div id="empty-basket">
+            <h2 class="basket-headline"> <u>Basket</u></h2>
+
+            <div id="shopping-basket">
+               <div class="basket-placeholder">
+                  <img src="img/shopping-basket-32.png">
+                   <h2> Fill your basket with your favourite dishes</h2>
+                  <span>Your basket ist empty</span>
+               </div>
+            </div>
+         </div>
+         <div id="close-popup" class="close-popup2 d-none">
+            <img onclick="closeBasket()" src="img/x-mark-black.png">
+        </div>
+         <div id="basket-sum" class="basket-sum d-none">
+            <div class="sum">
+               <div class="total-lines">
+                  <span>Subtotal</span> <span id="subtotal">0.00€</span>
+               </div>
+               <div class="total-lines">
+                  <span>Delivery costs</span> <span id="delivery-costs">4.95€</span>
+               </div>
+               <hr style="color: rgba(0, 0, 0, 0.02); width: 100%;">
+               <div class="total-lines">
+                  <span> <b> Total</b></span> <span id="total"> <b>0.00€</b></span>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+
+   </div>
+
+   <div id="basket-button" onclick="openBasketCalc()" class="basket-button">
+      <b>Basket</b>
+   </div>
+
+   <div class="popup-bg d-none" id="basket-popup">
+     
+   </div>
+
+   <footer class="footer">
+      <div class="footer-content">
+         <span onclick="openPopup()">Impressum <br> & <br> Datenschutzerklärung</span>
+         <span>AGB</span>
+
+      </div>
+
+
+
+      <div class="popup-bg d-none" id="popup">
+         <div class="popup">
+            <div class="popup-padding">
+               <div class="close-popup">
+                  <img onclick="closePopup()" src="img/x-mark-black.png">
+               </div>
+               <h1>Impressum</h1>
+               <h2 id="m46">Diensteanbieter</h2>
+               <p>Kaser Mahmood</p>
+               <p>Reventlowstr 10</p>
+               <p>25335</p>
+               <h2 id="m56">Kontaktmöglichkeiten</h2>E-Mail-Adresse: <p><a href="mailto:Kaser@live.de">Kaser@live.de</a>
+               </p>
+               Telefon: <p>00178691081</p>
+               <h2 id="m65">Haftungs- und Schutzrechtshinweise</h2>
+               <p>Urheberrechte und Markenrechte: Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien,
+                  Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte (Urheberrechte, Markenrechte)
+                  geschützt. Die Verwendung, Vervielfältigung usw. unterliegen unseren Rechten oder den Rechten der
+                  jeweiligen Urheber bzw. Rechteinhaber.</p>
+               <h2 id="m169">Bildnachweise</h2>Bildquellen und Urheberrechtshinweise: <div> Icons made by <a
+                     href="https://www.flaticon.com/authors/iconjam"> Iconjam </a> from <a
+                     href="https://www.flaticon.com/">www.flaticon.com'</a></div>
+               <div> Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect"> Pixel perfect </a> from <a
+                     href="https://www.flaticon.com/">www.flaticon.com'</a></div>
+               <div> Icons made by <a href="https://www.freepik.com"> Freepik </a> from <a
+                     href="https://www.flaticon.com/">www.flaticon.com'</a></div>
+               <p><a href="https://www.flaticon.com/free-icons/star">Star icons created by Pixel perfect - Flaticon</a>
+               </p>
+               <p><a href="https://www.flaticon.com/free-icons/info">Info icons created by Stockio - Flaticon</a></p>
+               <p><a href="https://www.flaticon.com/free-icons/heart">Heart icons created by Vlad Szirka - Flaticon</a>
+               </p>
+               <p><a href="https://www.flaticon.com/free-icons/heart">Heart icons created by joalfa - Flaticon</a></p>
+               <p><a href="https://www.flaticon.com/free-icons/add">Add icons created by Pixel perfect - Flaticon</a>
+               </p>
+               <p>pictures </p>
+               <p> Photo by <a
+                     href="https://unsplash.com/@steven__chan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ting
+                     Tian</a> on <a
+                     href="https://unsplash.com/s/photos/lamb-curry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+               </p>
+               <p class="seal"><a href="https://datenschutz-generator.de/"
+                     title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank"
+                     rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
+                     Schwenke</a></p>
+               <h1>Datenschutzerklärung</h1>
+               <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung
+                  (DSGVO),
+                  ist:</p>
+               <p>Kaser Mahmood</p>
+               <h2>Ihre Betroffenenrechte</h2>
+               <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende
+                  Rechte
+                  ausüben:</p>
+               <ul>
+                  <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>
+                  <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>
+                  <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>
+                  <li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch
+                     nicht
+                     löschen dürfen (Art. 18 DSGVO),</li>
+                  <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>
+                  <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag
+                     mit
+                     uns abgeschlossen haben (Art. 20 DSGVO).</li>
+               </ul>
+               <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft
+                  widerrufen.</p>
+               <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die
+                  zuständige
+                  Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle
+                  zuständige Behörde.</p>
+               <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter:
+                  <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" target="_blank"
+                     rel="noopener nofollow">https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html</a>.
+               </p>
+               <p></p>
+               <h2>Erfassung allgemeiner Informationen beim Besuch unserer Website</h2>
+               <h3>Art und Zweck der Verarbeitung:</h3>
+               <p>Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig
+                  Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese
+                  Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete
+                  Betriebssystem,
+                  den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches. </p>
+               <p>Sie werden insbesondere zu folgenden Zwecken verarbeitet:</p>
+               <ul>
+                  <li>Sicherstellung eines problemlosen Verbindungsaufbaus der Website,</li>
+                  <li>Sicherstellung einer reibungslosen Nutzung unserer Website,</li>
+                  <li>Auswertung der Systemsicherheit und -stabilität sowie</li>
+                  <li>zur Optimierung unserer Website.</li>
+               </ul>
+               <p>Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen. Informationen dieser Art
+                  werden von uns ggfs. anonymisiert statistisch ausgewertet, um unseren Internetauftritt und die
+                  dahinterstehende Technik zu optimieren. </p>
+               <h3>Rechtsgrundlage und berechtigtes Interesse:</h3>
+               <p>Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an
+                  der Verbesserung der Stabilität und Funktionalität unserer Website.</p>
+               <h3>Empfänger:</h3>
+               <p>Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer
+                  Webseite als Auftragsverarbeiter tätig werden.</p>
+               <p></p>
+               <h3>Speicherdauer:</h3>
+               <p>Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr erforderlich sind. Dies
+                  ist
+                  für die Daten, die der Bereitstellung der Website dienen, grundsätzlich der Fall, wenn die jeweilige
+                  Sitzung beendet ist. </p>
+               <p> Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 14 Tagen der Fall. Eine
+                  darüberhinausgehende Speicherung ist möglich. In diesem Fall werden die IP-Adressen der Nutzer
+                  anonymisiert, sodass eine Zuordnung des aufrufenden Clients nicht mehr möglich ist.</p>
+               <p></p>
+               <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
+               <p>Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich
+                  vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website
+                  nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt
+                  sein.
+                  Aus diesem Grund ist ein Widerspruch ausgeschlossen. </p>
+               <p></p>
+               <h2>Kontaktformular</h2>
+               <h3>Art und Zweck der Verarbeitung:</h3>
+               <p>Die von Ihnen eingegebenen Daten werden zum Zweck der individuellen Kommunikation mit Ihnen
+                  gespeichert.
+                  Hierfür ist die Angabe einer validen E-Mail-Adresse sowie Ihres Namens erforderlich. Diese dient der
+                  Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist
+                  optional.</p>
+               <h3>Rechtsgrundlage:</h3>
+               <p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt auf der Grundlage eines
+                  berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).</p>
+               <p>Durch Bereitstellung des Kontaktformulars möchten wir Ihnen eine unkomplizierte Kontaktaufnahme
+                  ermöglichen. Ihre gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche
+                  Anschlussfragen gespeichert.</p>
+               <p>Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der in das
+                  Kontaktformular eingegebenen Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b
+                  DSGVO).</p>
+               <h3>Empfänger:</h3>
+               <p>Empfänger der Daten sind ggf. Auftragsverarbeiter.</p>
+               <p></p>
+               <h3>Speicherdauer:</h3>
+               <p>Daten werden spätestens 6 Monate nach Bearbeitung der Anfrage gelöscht.</p>
+               <p>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen
+                  nach
+                  HGB und löschen Ihre Daten nach Ablauf dieser Fristen. </p>
+               <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
+               <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch
+                  nur
+                  bearbeiten, sofern Sie uns Ihren Namen, Ihre E-Mail-Adresse und den Grund der Anfrage mitteilen.</p>
+               <p></p>
+               <h2>Verwendung von Scriptbibliotheken (Google Webfonts)</h2>
+               <p>Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, verwenden wir auf
+                  dieser Website „Google Web Fonts“ der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043,
+                  USA; nachfolgend „Google“) zur Darstellung von Schriften.</p>
+               <p>Weitere Informationen zu Google Web Fonts finden Sie unter <a
+                     href="https://developers.google.com/fonts/faq" rel="noopener nofollow"
+                     target="_blank">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von
+                  Google: <a href="https://www.google.com/policies/privacy/" rel="noopener nofollow"
+                     target="_blank">https://www.google.com/policies/privacy/</a>.</p>
+               <p></p>
+               <h2>Verwendung von Typekit-Webschriftarten von Adobe Fonts</h2>
+               <p>Wir setzen Typekit-Webschriftarten von Adobe Fonts zur visuellen Gestaltung unserer Website ein. Adobe
+                  Fonts ist ein Dienst der Adobe Systems Software Ireland Companies (4-6 Riverwalk, Citywest Business
+                  Campus, Dublin 24, Republic of Ireland; nachfolgend „Adobe“), der uns den Zugriff auf eine
+                  Schriftartenbibliothek gewährt. </p>
+               <p>Zur Einbindung der von uns benutzten Schriftarten muss Ihr Browser eine Verbindung zu einem Server von
+                  Adobe in den USA aufbauen und die für unsere Website benötigte Schriftart herunterladen. Adobe erhält
+                  hierdurch die Information, dass von Ihrer IP-Adresse unsere Website aufgerufen wurde. </p>
+               <p>Weitere Informationen zu Adobe Fonts finden Sie in den Datenschutzhinweisen von Adobe Fonts, die Sie
+                  hier
+                  abrufen können: <a href="https://www.adobe.com/de/privacy/policies/adobe-fonts.html"
+                     rel="noopener nofollow"
+                     target="_blank">https://www.adobe.com/de/privacy/policies/adobe-fonts.html</a>
+               </p>
+               <p>Wenn Ihr Browser Web Fonts nicht unterstützt, oder Sie Ihre Einwilligung nicht erteilen, wird eine
+                  Standardschrift von Ihrem Computer genutzt.</p>
+               <h3>Widerruf der Einwilligung:</h3>
+               <p>Vom Anbieter wird derzeit keine Möglichkeit für einen einfachen Opt-out oder ein Blockieren der
+                  Datenübertragung angeboten. Wenn Sie eine Nachverfolgung Ihrer Aktivitäten auf unserer Website
+                  verhindern
+                  wollen, widerrufen Sie bitte im Cookie-Consent-Tool Ihre Einwilligung für die entsprechende
+                  Cookie-Kategorie oder alle technisch nicht notwendigen Cookies und Datenübertragungen. In diesem Fall
+                  können Sie unsere Website jedoch ggfs. nicht oder nur eingeschränkt nutzen.</p>
+               <p></p>
+               <hr>
+               <h2>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</h2>
+               <h3>Einzelfallbezogenes Widerspruchsrecht</h3>
+               <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die
+                  Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO
+                  (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies
+                  gilt
+                  auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.</p>
+               <p>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei
+                  denn,
+                  wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte
+                  und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung
+                  von
+                  Rechtsansprüchen.</p>
+               <h3>Empfänger eines Widerspruchs</h3>
+               <p></p>
+               <hr>
+               <h2>Änderung unserer Datenschutzbestimmungen</h2>
+               <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen
+                  Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen,
+                  z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue
+                  Datenschutzerklärung.</p>
+               <h2>Fragen an den Datenschutzbeauftragten</h2>
+               <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt
+                  an
+                  die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
+               <p></p>
+               <p><em>Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für <a
+                        href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank"
+                        rel="noopener">externe Datenschutzbeauftragte</a> (Version #2020-09-30).</em></p>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="header-left">
+         <img class="delivery-icon" src="img/food-delivery.png">
+         <img src="img/copyright-16.png"> Delivereasy.de
+      </div>
+
+   </footer>
+
+
+
+
+</body>
+
+</html>

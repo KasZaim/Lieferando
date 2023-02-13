@@ -59,7 +59,7 @@ function htmlTemplate(i, price) {
         </div>`;
 }
 
-
+//rendert den Rechner im Warenkorb
 function shoppingBasketTotal() {
     let sum = 0;
     let zwischensumme = document.getElementById('subtotal');
